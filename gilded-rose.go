@@ -48,6 +48,14 @@ func UpdateQuality(items []*Item) {
 			}
 		case "Sulfuras, Hand of Ragnaros":
 			// Do nothing
+		// Implement Conjured items as described in the spec
+		case "Conjured":
+			item.sellIn--
+			if item.sellIn < 0 {
+				item.quality = validQuality(item.quality - 4)
+			} else {
+				item.quality = validQuality(item.quality - 2)
+			}
 		default:
 			item.sellIn--
 			if item.sellIn < 0 {

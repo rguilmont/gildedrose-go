@@ -48,6 +48,7 @@ var itemMapping map[string]string = map[string]string{
 	"Backstage passes to a TAFKAL80ETC concert": backstagePassesType,
 	"Sulfuras, Hand of Ragnaros":                sulfurasType,
 	"Conjured":                                  conjuredType,
+	"Conjured Mana Cake":                        conjuredType,
 }
 
 // Now the items structs declaration

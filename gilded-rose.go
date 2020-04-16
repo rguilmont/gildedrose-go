@@ -1,5 +1,14 @@
 package main
 
+const (
+	// Minimum quality value
+	minQuality = 0
+	// Maximum quality value
+	maxQuality = 50
+	// Legendary quality
+	lengendaryQuality = 80
+)
+
 type Item struct {
 	name            string
 	sellIn, quality int

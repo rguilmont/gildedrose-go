@@ -2,13 +2,6 @@ package main
 
 import "testing"
 
-// Some useful constant
-const (
-	minQuality        = 0
-	maxQuality        = 50
-	lengendaryQuality = 80
-)
-
 func Test_Foo(t *testing.T) {
 	var items = []*Item{
 		&Item{"foo", 0, 0},
@@ -171,6 +164,8 @@ func Test_Conjured(t *testing.T) {
 		// Update expected quality
 
 		if items[0].sellIn < 0 {
+			quality = quality - 4
+		} else {
 			quality = quality - 2
 		}
 

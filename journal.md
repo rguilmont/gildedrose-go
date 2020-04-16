@@ -1,3 +1,5 @@
 # Gilded-roses
 
-First thing i did, was getting all the specifications from GildedRosesRequirements.txt and right tests
+First thing i did, was getting all the specifications from GildedRosesRequirements.txt and right tests.
+
+After that i refactor the code to make it more readable

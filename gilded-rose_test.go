@@ -37,7 +37,7 @@ func Test_PassedSellIn(t *testing.T) {
 	}
 
 	if items[0].quality != quality-2 {
-		t.Errorf("Expected %v as quality, got %v", (quality - 1), items[0].quality)
+		t.Errorf("Expected %v as quality, got %v", (quality - 2), items[0].quality)
 	}
 }
 
